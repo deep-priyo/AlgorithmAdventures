@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -6,7 +6,7 @@ import java.util.Set;
 public class LC128 {
     public static void main(String[] args) {
         int[] arr={100,4,200,1,3,2};
-        System.out.println(longestConsecutive(arr));
+        System.out.println("Longest Consecutive Sequence is -> "+longestConsecutive(arr));
     }
     public static int longestConsecutive(int[] nums) {
         Set<Integer> set=new HashSet<>();
@@ -14,7 +14,7 @@ public class LC128 {
             set.add(num);
         }
         int max=Integer.MIN_VALUE+1;
-        int count=0;
+        int count;
         for(int num:set){
             if(!(set.contains(num-1))){
                  count=1;
@@ -24,7 +24,7 @@ public class LC128 {
                     num+=1;
                 }
                 max=Math.max(max,count);
-                System.out.println(count);
+                //System.out.println(count);
             }
 
         }
