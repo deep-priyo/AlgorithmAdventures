@@ -1,11 +1,7 @@
 //https://leetcode.com/problems/group-anagrams/description/
 import java.util.*;
 public class LC49 {
-    public static void main(String[] args) {
-
-
-
-    }
+ 
     public static List<List<String>> groupAnagrams(String[] strs) {
         Map<String,List<String>> groupedAnagrams = new HashMap<>();
         for(String s : strs) {
