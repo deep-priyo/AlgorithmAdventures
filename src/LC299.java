@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Lc299 {
+public class LC299 {
     public static void main(String[] args) {
         System.out.println( getHint("1123","0111"));
     }

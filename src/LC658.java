@@ -1,7 +1,7 @@
 import java.util.*;
 
 //https://leetcode.com/problems/find-k-closest-elements/description/
-public class lc658 {
+public class LC658 {
     public static void main(String[] args) {
         int []arr={1,1,1,10,10,10};
         int k=4;//it is the number of integer to return
