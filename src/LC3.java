@@ -48,3 +48,25 @@ public class LC3 {
         return max;
     }
 }
+/*For string s = "abcabcbb":
+
+Initial state: i=0, j=0, max=0, set={}.
+
+j=0 (s.charAt(j) is 'a'):
+
+'a' is not in set, so add 'a' to set and increment j.
+Update max = 1 (set.size() is 1).
+j=1 (s.charAt(j) is 'b'):
+
+'b' is not in set, so add 'b' and increment j.
+Update max = 2.
+j=2 (s.charAt(j) is 'c'):
+
+'c' is not in set, so add 'c' and increment j.
+Update max = 3.
+j=3 (s.charAt(j) is 'a'):
+
+'a' is already in set, so we enter the else clause.
+Remove characters from the beginning until 'a' is removed (i is moved to 1).
+Continue the process and eventually j reaches the end of the string.
+Final result: max = 3, since the longest substring without repeating characters is "abc".*/
