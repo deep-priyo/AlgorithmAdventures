@@ -1,48 +1,57 @@
 import java.util.HashMap;
 
-//https://leetcode.com/problems/minimum-window-substring/description/
 public class LC76 {
     public static void main(String[] args) {
-    minWindow("ADOBECODEBANC","ABC");
+        System.out.println(minWindow("ADOBECODEBANC", "ABC"));
     }
+
     public static String minWindow(String s, String t) {
-        HashMap<Character, Integer> mapT = new HashMap<>();
-        HashMap<Character, Integer> mapS = new HashMap<>();
+        if (t == null || t.isEmpty() || s == null || s.isEmpty()) {
+            return "";
+        }
+
+        // Step 1: Build the frequency map for string t
+        HashMap<Character, Integer> countT = new HashMap<>();
         for (int i = 0; i < t.length(); i++) {
-            mapT.put(t.charAt(i), mapT.getOrDefault(t.charAt(i), 0) + 1);
+            countT.put(t.charAt(i), countT.getOrDefault(t.charAt(i), 0) + 1);
         }
-        System.out.println("Hashmap of t"+mapT);
-        int i, j = 0;
-        for ( i = 0; i < t.length(); i++)
-        {
-            mapS.put(s.charAt(i), mapS.getOrDefault(s.charAt(i), 0) + 1);
-        }
-        System.out.println("Hashmap of s"+mapS);
-        while (i < s.length()) {
-            char c = s.charAt(i);
-            //System.out.println(c);
-            mapS.put(c, mapS.getOrDefault(c, 0) + 1);
-            while (isSubset(mapT, mapS))
-            {
-                System.out.println(s.substring(j, i+1)+ " --- "+i);
-                mapS.remove(s.charAt(j));//removing char from the j or slow pointer
-                j++;
 
+        // Step 2: Sliding window variables
+        HashMap<Character, Integer> window = new HashMap<>();
+        int have = 0;
+        int need = countT.size(); // Number of unique characters in t
+        int leftPointer = 0;
+        int resLen = Integer.MAX_VALUE;
+        String res = "";
+
+        // Step 3: Expand and contract the window
+        for (int rightPointer = 0; rightPointer < s.length(); rightPointer++) {
+            char ch = s.charAt(rightPointer);
+            window.put(ch, window.getOrDefault(ch, 0) + 1);
+
+            // If the character count in the window matches that in t
+            if (countT.containsKey(ch) && window.get(ch).intValue() == countT.get(ch).intValue()) {
+                have++;
             }
 
-            i++;
-        }
-        return "";
-    }
-    public static boolean isSubset(HashMap<Character, Integer> map1, HashMap<Character, Integer> map2) {
-        // Iterate through all the elements of map1
-        for (Character key : map1.keySet()) {
-            // If map2 doesn't contain the key or the count in map2 is less than map1, return false
-            if (!map2.containsKey(key) || map2.get(key) < map1.get(key)) {
-                return false;
+            // Step 4: Try to shrink the window when all characters are matched
+            while (have == need) {
+                // Update the result if the current window is smaller
+                if ((rightPointer - leftPointer + 1) < resLen) {
+                    resLen = rightPointer - leftPointer + 1;
+                    res = s.substring(leftPointer, rightPointer + 1);
+                }
+
+                // Remove the leftmost character and shrink the window
+                char leftChar = s.charAt(leftPointer);
+                window.put(leftChar, window.get(leftChar) - 1);
+                if (countT.containsKey(leftChar) && window.get(leftChar) < countT.get(leftChar)) {
+                    have--;
+                }
+                leftPointer++;
             }
         }
-        // If we never return false, map1 is a subset of map2
-        return true;
+
+        return res;
     }
 }
