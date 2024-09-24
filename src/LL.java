@@ -151,4 +151,35 @@ public class LL {
         }
 
     }
+
+    // questions
+    public void dupliactes()
+    {
+        Node temp=head;
+        while(temp.next!=null) {
+            if(temp.value==temp.next.value) {
+                temp.next=temp.next.next;
+             size--;
+            }
+            else {
+                temp=temp.next;
+            }
+
+        }
+        tail=temp;
+        tail.next=null;
+    }
+
+    public static void main(String[] args) {
+        LL ll=new LL();
+        ll.insertAtLast(1);
+        ll.insertAtLast(1);
+        ll.insertAtLast(2);
+        ll.insertAtLast(2);
+        ll.insertAtLast(3);
+        ll.insertAtLast(3);
+        ll.display();
+        ll.dupliactes();
+        ll.display();
+    }
 }
