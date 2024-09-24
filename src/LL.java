@@ -190,6 +190,15 @@ public class LL {
         }
         return false;
     }
+    public ListNode middleNode(ListNode head) {
+        ListNode s=head;
+        ListNode f=head;
+        while(f != null && f.next !=null)
+        { s=s.next;
+            f=f.next.next;
+        }
+        return s;
+    }
     public static void main(String[] args) {
         LL ll=new LL();
         ll.insertAtLast(1);
