@@ -169,7 +169,27 @@ public class LL {
         tail=temp;
         tail.next=null;
     }
-
+    public boolean hasCycle(ListNode head) {
+        ListNode fast=head;
+        ListNode slow=head;
+        while(fast!=null&& fast.next!=null)
+        {
+            fast=fast.next.next;
+            slow=slow.next;
+            if(slow==fast)
+            {
+                int c=0;
+                do
+                {
+                    slow=slow.next;
+                    c++;
+                }while(slow!=fast);
+                System.out.println(c+1);
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String[] args) {
         LL ll=new LL();
         ll.insertAtLast(1);
