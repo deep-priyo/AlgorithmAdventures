@@ -9,6 +9,40 @@ public class DL {
         head.prev = newNode;}
         head = newNode;
     }
+    public Node getNode(int index) {
+        Node current = head;
+        for(int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        return current;
+    }
+    public void insertAtIndex(int index, int data) {
+
+        if(index == 0) {
+            insertFirst(data);
+            return;
+        }
+        if(index == size) {
+            insertLast(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node current = getNode(index - 1);  // Get node just before the index
+
+        // Correctly set newNode's next and prev pointers
+        newNode.next = current.next;
+        newNode.prev = current;
+
+        // Update the next node's previous pointer if it exists
+        if (current.next != null) {
+            current.next.prev = newNode;
+        }
+
+        // Link the current node to the new node
+        current.next = newNode;
+
+        size++;
+    }
     public void insertLast(int data) {
         Node newNode = new Node(data);
         Node current = head;
@@ -41,7 +75,7 @@ public class DL {
         }
         System.out.print("END\n");
     }
-  private class Node
+  public class Node
   {
       int data;
       Node next;

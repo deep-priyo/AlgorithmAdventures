@@ -17,13 +17,20 @@ public class Main {
 //        linkedList.deleteAtIndex(2);
 //        linkedList.display();
         //linkedList.getSize();
-        DL dl = new DL();
-        dl.insertFirst(4);
-        dl.insertFirst(3);
-        dl.insertFirst(2);
-        dl.insertFirst(1);
-        dl.insertLast(5);
-        dl.display();
+//        DL dl = new DL();
+//        dl.insertFirst(4);
+//        dl.insertFirst(3);
+//        dl.insertFirst(2);
+//        dl.insertFirst(1);
+//        dl.insertLast(5);
+//        dl.insertAtIndex(2,45);
+//        dl.display();
+        CircularLL ll = new CircularLL();
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(3);
+        ll.insert(4);
+        ll.display();
 
     }
 }
