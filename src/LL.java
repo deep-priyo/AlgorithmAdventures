@@ -169,7 +169,7 @@ public class LL {
         tail=temp;
         tail.next=null;
     }
-    public boolean hasCycle(ListNode head) {
+    public int hasCycle(ListNode head) {
         ListNode fast=head;
         ListNode slow=head;
         while(fast!=null&& fast.next!=null)
@@ -184,11 +184,11 @@ public class LL {
                     slow=slow.next;
                     c++;
                 }while(slow!=fast);
-                System.out.println(c+1);
-                return true;
+                //System.out.println(c+1);
+                return c;
             }
         }
-        return false;
+        return 0;
     }
     public ListNode middleNode(ListNode head) {
         ListNode s=head;
@@ -198,6 +198,22 @@ public class LL {
             f=f.next.next;
         }
         return s;
+    }
+    public ListNode detectCycle(ListNode head) {
+        int lengthCycle= hasCycle(head);
+        if(lengthCycle==0)return null;
+        ListNode first=head;
+        ListNode second=head;
+        for(int i=1;i<=lengthCycle;i++)
+        {
+            second =second.next;
+        }
+        while(first!=second)
+        {
+            first=first.next;
+            second=second.next;
+        }
+        return first;
     }
     public static void main(String[] args) {
         LL ll=new LL();
