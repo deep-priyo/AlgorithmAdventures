@@ -30,7 +30,14 @@ public class Main {
         ll.insert(2);
         ll.insert(3);
         ll.insert(4);
-        ll.display();
+        ll.insert(5);
 
+        ll.display();
+        ll.delete(3);
+        ll.display();
+        ll.delete(1);
+        ll.display();
+        ll.delete(5);
+        ll.display();
     }
 }
