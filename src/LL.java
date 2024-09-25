@@ -1,5 +1,5 @@
 public class LL {
-    private Node head;
+    public Node head;
     private Node tail;
     private int size;
     public LL() {
@@ -150,6 +150,7 @@ public class LL {
             this.next = next;
         }
 
+
     }
 
     // questions
@@ -215,16 +216,48 @@ public class LL {
         }
         return first;
     }
+
+    //https://leetcode.com/problems/merge-two-sorted-lists/
+    public static  LL merge(LL first, LL second) {
+        Node firstHead= first.head;
+        Node secondHead= second.head;
+        LL ans=new LL();
+        while(firstHead!=null && secondHead!=null) {
+            if(firstHead.value<secondHead.value)
+            {
+                ans.insertAtLast(firstHead.value);
+                firstHead=firstHead.next;
+            }
+            else
+            {
+                ans.insertAtLast(secondHead.value);
+                secondHead=secondHead.next;
+            }
+        }
+        while(secondHead!=null) {
+            ans.insertAtLast(secondHead.value);
+            secondHead=secondHead.next;
+        }
+        while (firstHead != null) {
+            ans.insertAtLast(firstHead.value);
+            firstHead=firstHead.next;
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
-        LL ll=new LL();
-        ll.insertAtLast(1);
-        ll.insertAtLast(1);
-        ll.insertAtLast(2);
-        ll.insertAtLast(2);
-        ll.insertAtLast(3);
-        ll.insertAtLast(3);
-        ll.display();
-        ll.dupliactes();
-        ll.display();
+        LL first=new LL();
+        LL second=new LL();
+        first.insertAtFirst(5);
+        first.insertAtFirst(3);
+        first.insertAtFirst(1);
+        second.insertAtFirst(14);
+        second.insertAtFirst(9);
+        second.insertAtFirst(2);
+        second.insertAtFirst(1);
+        first.display();
+        second.display();
+        LL ans=merge(first,second);
+        ans.display();
     }
 }
