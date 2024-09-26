@@ -256,6 +256,26 @@ public class LL {
         tail=node;
         tail.next=null;
     }
+    public void iterativeRevers(Node node)
+    {
+        if(size<2)
+            return;
+        Node prev=null;
+        Node present=head;
+        Node next=present.next;
+        while(present!=null)
+        {
+            present.next=prev;
+            prev=present;
+            present=next;
+            if(next!=null)
+            {
+                next=next.next;
+            }
+        }
+        head=prev;
+    }
+
 
     public static void main(String[] args) {
         LL first=new LL();
