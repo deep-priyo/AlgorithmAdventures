@@ -1,13 +1,13 @@
 public class LL {
-    public Node head;
-    private Node tail;
+    public ListNode head;
+    private ListNode tail;
     private int size;
     public LL() {
         this.size = 0;
     }
     public void insertAtFirst(int val)
     {
-        Node node = new Node(val);// I have the new node
+        ListNode node = new ListNode(val);// I have the new node
 
         node.next = head;
         head = node;
@@ -20,7 +20,7 @@ public class LL {
         if(tail == null) {
         insertAtFirst(val);
         return;}
-        Node node = new Node(val);
+        ListNode node = new ListNode(val);
         tail.next = node;
         tail = node;
     }
@@ -34,20 +34,20 @@ public class LL {
             insertAtLast(value);
             return;
         }
-        Node temp=head;
+        ListNode temp=head;
         while(index>1) {
             temp=temp.next;
             index--;
         }
-        Node newNode = new Node(value,temp.next);
+        ListNode newNode = new ListNode(value,temp.next);
         temp.next = newNode;
 
 
 
     }
-    public Node get(int index)
+    public ListNode get(int index)
     {
-        Node node = head;
+        ListNode node = head;
         for(int i=0;i<index;i++) {
             node=node.next;
         }
@@ -59,7 +59,7 @@ public class LL {
         {
             return deleteFirst();
         }
-        Node secondLast=get(size-2);
+        ListNode secondLast=get(size-2);
         int val=tail.value;
         tail=secondLast;
         tail.next=null;
@@ -73,13 +73,13 @@ public class LL {
         if(index==size-1) {
             return deleteLast2();
         }
-        Node prev=get(index-1);
+        ListNode prev=get(index-1);
         int val=prev.next.value;
         prev.next=prev.next.next;
         return val;
-    }public Node findValue(int data)
+    }public ListNode findValue(int data)
     {
-        Node temp=head;
+        ListNode temp=head;
         while(temp.next!=null) {
             if(temp.value==data) {
                 return temp;
@@ -90,7 +90,7 @@ public class LL {
     }
     public int deleteLast()
     {
-        Node temp=head;
+        ListNode temp=head;
         int val=tail.value;
         if(head==null) {
             System.out.println("List is empty");
@@ -129,22 +129,22 @@ public class LL {
     }
     public void display()
     {
-        Node pointer = head;
+        ListNode pointer = head;
         while(pointer != null) {
             System.out.print(pointer.value + "->");
             pointer = pointer.next;
         }
         System.out.print("END\n");
     }
-    public class Node
+    public static class ListNode
     {
-        private int value;
-        private Node next;
-        public Node(int value)
+        int value;
+        ListNode next;
+        public ListNode(int value)
         {
             this.value = value;
         }
-        public Node(int value, Node next)
+        public ListNode(int value, ListNode next)
         {
             this.value = value;
             this.next = next;
@@ -156,7 +156,7 @@ public class LL {
     // questions
     public void dupliactes()
     {
-        Node temp=head;
+        ListNode temp=head;
         while(temp.next!=null) {
             if(temp.value==temp.next.value) {
                 temp.next=temp.next.next;
@@ -219,8 +219,8 @@ public class LL {
 
     //https://leetcode.com/problems/merge-two-sorted-lists/
     public static  LL merge(LL first, LL second) {
-        Node firstHead= first.head;
-        Node secondHead= second.head;
+        ListNode firstHead= first.head;
+        ListNode secondHead= second.head;
         LL ans=new LL();
         while(firstHead!=null && secondHead!=null) {
             if(firstHead.value<secondHead.value)
@@ -244,7 +244,7 @@ public class LL {
         }
         return ans;
     }
-    public void reverse(Node node)
+    public void reverse(ListNode node)
     {
         if(node==tail)
         {
@@ -256,13 +256,34 @@ public class LL {
         tail=node;
         tail.next=null;
     }
-    public void iterativeRevers(Node node)
+    public ListNode reverseList(ListNode head)
+    {
+        if(head==null)
+            return head;
+        ListNode prev=null;
+        ListNode present=head;
+        ListNode next=present.next;
+        while(present!=null)
+        {
+            present.next=prev;
+            prev=present;
+            present=next;
+            if(next!=null)
+            {
+                next=next.next;
+            }
+        }
+        head=prev;
+        return head;
+
+    }
+    public void iterativeRevers(ListNode node)
     {
         if(size<2)
             return;
-        Node prev=null;
-        Node present=head;
-        Node next=present.next;
+        ListNode prev=null;
+        ListNode present=head;
+        ListNode next=present.next;
         while(present!=null)
         {
             present.next=prev;
@@ -275,21 +296,165 @@ public class LL {
         }
         head=prev;
     }
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        if(left==right)
+            return head;
+        ListNode current = head;
+        ListNode prev= null;
+        for (int i = 0; current!=null && i < left-1; i++) {
+            prev=current;
+            current=current.next;
+        }
+        ListNode last=prev;
+        ListNode newEnd=current;
+        ListNode next=current.next;
+        for (int i = 0; current!=null &&i < right-left+1; i++) {
+            current.next=prev;
+            prev=current;
+            current=next;
+            if(next!=null)
+            {
+                next=next.next;
+            }
+        }
+        if(last!=null)
+            last.next=prev;
+        else
+            head=prev;
+        newEnd.next=current;
+        return head;
+    }
+    public boolean isPalindrome(ListNode head) {
+        ListNode fast=head;
+        ListNode mid=head;
+        while(fast!=null && fast.next!=null) {
+            fast=fast.next.next;
+            mid=mid.next;
+        }
+        ListNode prev=null;
+        while(mid!=null)
+        {
+            ListNode temp=mid.next;
+            mid.next=prev;
+            prev=mid;
+            mid=temp;
+        }
+        ListNode left=head;
+        ListNode right=prev;
+        while(right!=null)
+        {
+            if(left.value!=right.value)
+                return false;
+            left=left.next;
+            right=right.next;
+        }
+        return true;
+//        Node pointer=mid;
+//         do{
+//            System.out.println(head.value +"     "+pointer.value);
+//            if(head.value!=pointer.value)
+//                System.out.println();
+//            head=head.next;
+//            pointer=pointer.next;
+//        }while ( pointer!=null);
+//        return true;
+    }
 
 
+//https://leetcode.com/problems/reorder-list/description/
+
+    public ListNode reorderList(ListNode head) {
+        if(head==null || head.next==null)
+            return head;
+        ListNode middle=middleNode(head);
+        ListNode hs=reverseList(middle);
+        ListNode hf=head;
+        while(hf!=null && hs!=null)
+        {
+            ListNode temp=hf.next;
+            hf.next=hs;
+            hf=temp;
+            temp=hs.next;
+            hs.next=hf;
+            hs=temp;
+        }
+        if(hf!=null)
+            hf.next=null;
+        return head;
+    }
+
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        if(head==null || head.next==null)
+            return null;
+        ListNode curr=head;
+        int size=0;
+        while (curr!=null) {
+            size++;
+            curr=curr.next;
+        }
+        System.out.println("Size of LL:  "+size);
+        if(size==n)
+        {
+            head=head.next;
+            return head;
+        }
+        curr=head;
+        while(size>n+1)
+        {
+            curr=curr.next;
+            size--;
+            System.out.println("size"+size);
+        }
+        System.out.println(curr.value);
+        curr.next=curr.next.next;
+        display();
+        return head;
+    }
+ public ListNode removeNthFromEnd2(ListNode head,int n)
+ {
+     ListNode fast=head;
+     ListNode slow=head;
+     for (int i = 0; i < n; i++) {
+         fast=fast.next;
+     }
+     while (fast!=null ) {
+         fast=fast.next;
+         slow=slow.next;
+     }
+     slow.next=slow.next.next;
+     return head;
+ }
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode sum=new ListNode(0);
+        ListNode curr=sum;
+        int carry=0;
+        while (l1!=null || l2!=null) {
+            int a=l1==null?0:l1.value;
+            int b=l2==null?0:l2.value;
+            int toLinkedList=a+b+carry;
+            carry=(toLinkedList/10);
+            toLinkedList=toLinkedList%10;
+            ListNode temp=new ListNode(toLinkedList);
+            curr.next=temp;
+            curr=temp;
+            if(l1!=null)l1=l1.next;
+            if (l2!=null)l2=l2.next;
+        }
+        if(carry>0) {
+            curr.next= new ListNode(carry);
+        }
+
+        return sum.next;
+    }
     public static void main(String[] args) {
         LL first=new LL();
-        LL second=new LL();
-        first.insertAtFirst(5);
-        first.insertAtFirst(3);
+//        first.insertAtFirst(5);
+//        first.insertAtFirst(4);
+//        //first.insertAtFirst(2);
+//        first.insertAtFirst(3);
+        first.insertAtFirst(2);
         first.insertAtFirst(1);
-        second.insertAtFirst(14);
-        second.insertAtFirst(9);
-        second.insertAtFirst(2);
-        second.insertAtFirst(1);
         first.display();
-        second.display();
-        LL ans=merge(first,second);
-        ans.display();
+        first.removeNthFromEnd(first.head,2);
     }
 }
