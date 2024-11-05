@@ -47,3 +47,7 @@ Every day, I pick a new problem from LeetCode, solve it, and commit the solution
 ## 🚀 Let's Go!
 
 Feel free to explore the repository and see how I approach various problems. Let's learn together and continue to grow as problem-solvers! 🌟
+
+## Problem Solved
+
+2914. Minimum Number of Changes to Make Binary String Beautiful->Medium->O(n)
