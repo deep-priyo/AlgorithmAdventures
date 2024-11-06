@@ -51,3 +51,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 ## Problem Solved
 
 2914. Minimum Number of Changes to Make Binary String Beautiful->Medium->O(n)
+3011. Find if Array Can Be Sorted -> Medium -> 0(n^2)
