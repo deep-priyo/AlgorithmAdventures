@@ -54,3 +54,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 3011. Find if Array Can Be Sorted -> Medium -> 0(n^2)
 2275. Largest Combination With Bitwise AND Greater Than Zero -> Medium -> 0(n)
 1829. Maximum XOR for Each Query->Medium->O(n)
+3133. Minimum Array End->Medium->O(n * 2^b)
