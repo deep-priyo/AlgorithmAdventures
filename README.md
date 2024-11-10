@@ -55,3 +55,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 2275. Largest Combination With Bitwise AND Greater Than Zero -> Medium -> 0(n)
 1829. Maximum XOR for Each Query->Medium->O(n)
 3133. Minimum Array End->Medium->O(n * 2^b)
+3097. Shortest Subarray With OR at Least K II->Medium->O(n)
