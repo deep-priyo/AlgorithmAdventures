@@ -56,3 +56,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 1829. Maximum XOR for Each Query->Medium->O(n)
 3133. Minimum Array End->Medium->O(n * 2^b)
 3097. Shortest Subarray With OR at Least K II->Medium->O(n)
+2601. Prime Subtraction Operation->Medium-> 0(n*m*sqrt(m))
