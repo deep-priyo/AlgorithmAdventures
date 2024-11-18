@@ -58,3 +58,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 3097. Shortest Subarray With OR at Least K II->Medium->O(n)
 2601. Prime Subtraction Operation->Medium-> 0(n*m*sqrt(m))
 2563. Count the Number of Fair Pairs ->Medium->Brute force & optimized
+1652. Defuse the Bomb->Easy-> O(n*k)
