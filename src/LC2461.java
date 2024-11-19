@@ -45,4 +45,30 @@ public class LC2461 {
         }
         return max;
     }
+    public long maximumSubarraySum2(int[] nums, int k) {
+        HashSet<Integer> set = new HashSet<>();
+        int left = 0, right = 0;
+        long sum = 0, maxSum = 0;
+
+        while (right < nums.length) {
+            if (!set.contains(nums[right])) {
+                set.add(nums[right]);
+                sum += nums[right];
+                right++;
+
+                if (right - left == k) {
+                    maxSum = Math.max(maxSum, sum);
+                    set.remove(nums[left]);
+                    sum -= nums[left];
+                    left++;
+                }
+            } else {
+                set.remove(nums[left]);
+                sum -= nums[left];
+                left++;
+            }
+        }
+
+        return maxSum;
+    }
 }
