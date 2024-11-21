@@ -59,3 +59,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 2601. Prime Subtraction Operation->Medium-> 0(n*m*sqrt(m))
 2563. Count the Number of Fair Pairs ->Medium->Brute force & optimized
 1652. Defuse the Bomb->Easy-> O(n*k)
+2257. Count Unguarded Cells in the Grid-> Medium -> O(k.(m+n))
