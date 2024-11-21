@@ -2,10 +2,10 @@ import java.util.Arrays;
 
 public class LC1652 {
     public static void main(String[] args) {
-        int[] code={5,7,1,4};
-        System.out.println(Arrays.toString(decrypt(code,3)));
+        int[] code={2,4,9,3};
+        System.out.println(Arrays.toString(decrypt(code,2)));
     }
-    public static int[] decrypt(int[] code, int k) {
+    public static int[] decrypt2(int[] code, int k) {
 
         int n=code.length;
         int[] res =new int[n];
@@ -37,6 +37,25 @@ public class LC1652 {
                     res[i] += code[(j+n )%n];
                 }
             }
+        }
+        return res;
+    } public static int[] decrypt(int[] code, int k) {
+        int[] res =new int[code.length];
+        int i;
+        int sum=0;
+        for (i = 0; i < k; i++) {
+            sum+=code[i%code.length];
+        }
+        if(k>0)res[res.length-1]=sum;
+        if(k<0)res[res.length-k]=sum;
+
+        int j=0;
+        for (; i < code.length+k; i++) {
+
+            sum=sum+code[i% code.length]-code[j%code.length];
+            res[j% code.length]=sum;
+            System.out.println(sum);
+            j++;
         }
         return res;
     }
