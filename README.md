@@ -61,3 +61,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 1652. Defuse the Bomb->Easy-> O(n*k)
 2257. Count Unguarded Cells in the Grid-> Medium -> O(k.(m+n))
 2516. Take K of Each Character From Left and Right-> Medium -> O(n)
+1861. Rotating the Box-> Medium ->O(n*m)
