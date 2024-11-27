@@ -65,3 +65,4 @@ Feel free to explore the repository and see how I approach various problems. Let
 438. Find All Anagrams in a String-> Medium -> 0(N)
 Solve TCS CodeVita PYQ Rotate String and Anagram
 Solve TCS CodeVita PYQ SamBrideHunt
+54. Spiral Matrix ->Medium->O(N*M)UP
