@@ -69,3 +69,4 @@ Solve TCS CodeVita PYQ SamBrideHunt
 Solved TCSChakravyuhaMatrixTraversal
 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence->easy->O(N)
 2109. Adding Spaces to a String->Medium->O(N)
+3151. Special Array I->Easy->O(N)
