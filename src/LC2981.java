@@ -31,6 +31,41 @@ public class LC2981 {
         System.out.println(map);
         return max;
     }
+    public int maximumLengthOptimized(String s) {
+        HashMap<String, Integer> map = new HashMap<>();
+        int n = s.length();
+
+
+        for (int i = 0; i < n; i++) {
+            char firstChar = s.charAt(i);
+            boolean allSame = true;
+
+
+            for (int j = i; j < n; j++) {
+                if (s.charAt(j) != firstChar) {
+                    allSame = false;
+                    break;
+                }
+
+
+                String key = s.substring(i, j + 1);
+                map.put(key, map.getOrDefault(key, 0) + 1);
+            }
+        }
+
+        int max = -1;
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            String key = entry.getKey();
+            int value = entry.getValue();
+
+            if (value >= 3) {
+                max = Math.max(max, key.length());
+            }
+        }
+
+
+        return max;
+    }
     public static boolean hasSameCharacters(String str) {
         if (str == null || str.isEmpty()) {
             return false;
