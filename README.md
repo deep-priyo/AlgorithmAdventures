@@ -70,3 +70,4 @@ Solved TCSChakravyuhaMatrixTraversal
 1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence->easy->O(N)
 2109. Adding Spaces to a String->Medium->O(N)
 3151. Special Array I->Easy->O(N)
+2981. Find Longest Special Substring That Occurs Thrice I->Medium->O(N^2)
