@@ -74,3 +74,4 @@ Solved TCSChakravyuhaMatrixTraversal
 2779. Maximum Beauty of an Array After Applying Operation->Medium->O(Nlog(N))
 2558. Take Gifts From the Richest Pile->Easy->O(N)
 1752. Check if Array Is Sorted and Rotated->Easy->O(N)
+3105. Longest Strictly Increasing or Strictly Decreasing Subarray->Easy->O(N)
