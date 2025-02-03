@@ -73,3 +73,4 @@ Solved TCSChakravyuhaMatrixTraversal
 2981. Find Longest Special Substring That Occurs Thrice I->Medium->O(N^2)
 2779. Maximum Beauty of an Array After Applying Operation->Medium->O(Nlog(N))
 2558. Take Gifts From the Richest Pile->Easy->O(N)
+1752. Check if Array Is Sorted and Rotated->Easy->O(N)
