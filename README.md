@@ -75,3 +75,4 @@ Solved TCSChakravyuhaMatrixTraversal
 2558. Take Gifts From the Richest Pile->Easy->O(N)
 1752. Check if Array Is Sorted and Rotated->Easy->O(N)
 3105. Longest Strictly Increasing or Strictly Decreasing Subarray->Easy->O(N)
+1800. Maximum Ascending Subarray Sum->Easy->O(N)
