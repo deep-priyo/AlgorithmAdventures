@@ -76,3 +76,4 @@ Solved TCSChakravyuhaMatrixTraversal
 1752. Check if Array Is Sorted and Rotated->Easy->O(N)
 3105. Longest Strictly Increasing or Strictly Decreasing Subarray->Easy->O(N)
 1800. Maximum Ascending Subarray Sum->Easy->O(N)
+1790. Check if One String Swap Can Make Strings Equal->Easy->O(N)
