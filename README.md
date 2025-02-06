@@ -77,3 +77,4 @@ Solved TCSChakravyuhaMatrixTraversal
 3105. Longest Strictly Increasing or Strictly Decreasing Subarray->Easy->O(N)
 1800. Maximum Ascending Subarray Sum->Easy->O(N)
 1790. Check if One String Swap Can Make Strings Equal->Easy->O(N)
+1726. Tuple with Same Product -> Medium -> O(N^2)
