@@ -78,3 +78,4 @@ Solved TCSChakravyuhaMatrixTraversal
 1800. Maximum Ascending Subarray Sum->Easy->O(N)
 1790. Check if One String Swap Can Make Strings Equal->Easy->O(N)
 1726. Tuple with Same Product -> Medium -> O(N^2)
+3160. Find the Number of Distinct Colors Among the Balls->Medium->O(N)
