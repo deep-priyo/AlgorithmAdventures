@@ -1,54 +1,75 @@
-# AlgorithmAdventures 🚀
+# 🚀 AlgorithmAdventures
 
-Welcome to **AlgorithmAdventures**! This repository is where I embark on a coding journey, solving algorithmic challenges on LeetCode and pushing my solutions to sharpen my problem-solving skills. Join me as I tackle new problems and explore different algorithms! 💻✨
+Welcome to **AlgorithmAdventures**! This is my personal coding journal where I solve algorithmic challenges on **LeetCode** and sharpen my problem-solving skills daily.  
+Join me as I explore different algorithms and techniques to crack challenging problems! 💻✨
+
+---
 
 ## 🛠️ LeetCode Skills Progress
 
-### **Advanced Skills** 🧠
-- **Dynamic Programming** x3 🔥
-- **Divide and Conquer** x3 ⚔️
-- **Quickselect** x2 🎯
-- - _... and more!_
+### 🧠 **Advanced Skills**
+🔥 **Dynamic Programming** ×14  
+⚔️ **Divide and Conquer** ×6  
+🎯 **Quickselect** ×3  
+📚 **Monotonic Stack** ×8  
+🧩 **Union Find** ×7  
+🌀 **Monotonic Queue** ×3  
+📈 **Topological Sort** ×3  
+🚀 **Shortest Path** ×3
+
+---
+
+### 🎯 **Intermediate Skills**
+🗄️ **Hash Table** ×56  
+➗ **Math** ×30  
+🔍 **Binary Search** ×27  
+🌊 **Breadth-First Search (BFS)** ×19  
+🎯 **Sliding Window** ×16  
+💡 **Bit Manipulation** ×15  
+⚡ **Greedy** ×14  
+🌲 **Depth-First Search (DFS)** ×14
+
+---
+
+### 💡 **Fundamental Skills**
+🧩 **Array** ×140  
+📜 **String** ×70  
+🏃‍♂️🏃‍♀️ **Two Pointers** ×37  
+📊 **Sorting** ×28  
+🧮 **Matrix** ×21  
+🔗 **Linked List** ×18  
+🥞 **Stack** ×17  
+🎮 **Simulation** ×15
+
+---
+
+## 📅 **Daily Challenge**
+
+Every day, I pick a new problem from LeetCode, solve it, and commit the solution here.  
+This is part of my commitment to improving my **algorithmic thinking** and **coding proficiency**, while also maintaining a streak of consistent progress.
 
 
-### **Intermediate Skills** 🎯
-- **Hash Table** x16 🗄️
-- **Math** x14 ➗
-- **Binary Search** x5 🔍
-- - _... and more!_
+---
 
-
-### **Fundamental Skills** 💡
-- **Array** x32 🧩
-- **String** x23 📜
-- **Sorting** x11 📊
-- **Two Pointers** x11 🏃‍♂️🏃‍♀️
-- **Simulation** x4 🎮
-- **Stack** x4 🥞
-- **Linked List** x4 🔗
-- **Matrix** x3 🧮
-- - _... and more!_
-
-
-## 📅 Daily Challenge
-
-Every day, I pick a new problem from LeetCode, solve it, and commit the solution here. This is part of my commitment to improve my algorithmic thinking and coding proficiency, while also maintaining a streak of consistent progress.
-
-### 📚 Current Streak: Solving daily LeetCode problems and pushing solutions to GitHub!
-
-## 💻 How to Use This Repo
+## 💻 **How to Use This Repo**
 
 - Each folder is named after the problem solved for that day.
 - Inside each folder, you'll find:
-  - **Code Solution** 📝
-  - **Problem Explanation** 💡 (in some cases)
-  - **Test Cases** ✅
+  - 📝 **Code Solution**
+  - 💡 **Problem Explanation** *(in some cases)*
+  - ✅ **Test Cases**
 
-## 🚀 Let's Go!
+---
 
-Feel free to explore the repository and see how I approach various problems. Let's learn together and continue to grow as problem-solvers! 🌟
+## 🚀 **Let's Go!**
 
-## Problem Solved
+Feel free to explore the repository and see how I approach various problems.  
+Let's **learn together** and continue to grow as problem-solvers! 🌟
+
+---
+
+## 📜 **Problems Solved**
+### ( All problems solved are not yet listed below check repo for more problems )
 
 2914. Minimum Number of Changes to Make Binary String Beautiful->Medium->O(n)
 3011. Find if Array Can Be Sorted -> Medium -> 0(n^2)
