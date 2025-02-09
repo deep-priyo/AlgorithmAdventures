@@ -71,34 +71,47 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 ## 📜 **Problems Solved**
 ### ( All problems solved are not yet listed below check repo for more problems )
 
-2914. Minimum Number of Changes to Make Binary String Beautiful->Medium->O(n)
-3011. Find if Array Can Be Sorted -> Medium -> 0(n^2)
-2275. Largest Combination With Bitwise AND Greater Than Zero -> Medium -> 0(n)
-1829. Maximum XOR for Each Query->Medium->O(n)
-3133. Minimum Array End->Medium->O(n * 2^b)
-3097. Shortest Subarray With OR at Least K II->Medium->O(n)
-2601. Prime Subtraction Operation->Medium-> 0(n*m*sqrt(m))
-2563. Count the Number of Fair Pairs ->Medium->Brute force & optimized
-1652. Defuse the Bomb->Easy-> O(n*k)
-2257. Count Unguarded Cells in the Grid-> Medium -> O(k.(m+n))
-2516. Take K of Each Character From Left and Right-> Medium -> O(n)
-1861. Rotating the Box-> Medium ->O(n*m)
-438. Find All Anagrams in a String-> Medium -> 0(N)
-Solve TCS CodeVita PYQ Rotate String and Anagram
-Solve TCS CodeVita PYQ SamBrideHunt
-54. Spiral Matrix ->Medium->O(N*M)UP
-Solved TCSChakravyuhaMatrixTraversal
-1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence->easy->O(N)
-2109. Adding Spaces to a String->Medium->O(N)
-3151. Special Array I->Easy->O(N)
-2981. Find Longest Special Substring That Occurs Thrice I->Medium->O(N^2)
-2779. Maximum Beauty of an Array After Applying Operation->Medium->O(Nlog(N))
-2558. Take Gifts From the Richest Pile->Easy->O(N)
-1752. Check if Array Is Sorted and Rotated->Easy->O(N)
-3105. Longest Strictly Increasing or Strictly Decreasing Subarray->Easy->O(N)
-1800. Maximum Ascending Subarray Sum->Easy->O(N)
-1790. Check if One String Swap Can Make Strings Equal->Easy->O(N)
-1726. Tuple with Same Product -> Medium -> O(N^2)
-3160. Find the Number of Distinct Colors Among the Balls->Medium->O(N)
-2349. Design a Number Container System->Medium->O(1)
-2364. Count Number of Bad Pairs->Medium->O(N)
+## 📜 Problems Solved
+
+### 🟢 Easy Problems
+- **1652.** Defuse the Bomb → 🕑 O(n*k)
+- **1455.** Check If a Word Occurs As a Prefix of Any Word in a Sentence → 🕑 O(N)
+- **3151.** Special Array I → 🕑 O(N)
+- **2558.** Take Gifts From the Richest Pile → 🕑 O(N)
+- **1752.** Check if Array Is Sorted and Rotated → 🕑 O(N)
+- **3105.** Longest Strictly Increasing or Strictly Decreasing Subarray → 🕑 O(N)
+- **1800.** Maximum Ascending Subarray Sum → 🕑 O(N)
+- **1790.** Check if One String Swap Can Make Strings Equal → 🕑 O(N)
+
+---
+
+### 🟡 Medium Problems
+- **2914.** Minimum Number of Changes to Make Binary String Beautiful → 🕑 O(n)
+- **3011.** Find if Array Can Be Sorted → 🕑 O(n²)
+- **2275.** Largest Combination With Bitwise AND Greater Than Zero → 🕑 O(n)
+- **1829.** Maximum XOR for Each Query → 🕑 O(n)
+- **3133.** Minimum Array End → 🕑 O(n * 2^b)
+- **3097.** Shortest Subarray With OR at Least K II → 🕑 O(n)
+- **2601.** Prime Subtraction Operation → 🕑 O(n * m * sqrt(m))
+- **2563.** Count the Number of Fair Pairs → **Brute force & Optimized**
+- **2257.** Count Unguarded Cells in the Grid → 🕑 O(k * (m+n))
+- **2516.** Take K of Each Character From Left and Right → 🕑 O(n)
+- **1861.** Rotating the Box → 🕑 O(n*m)
+- **438.** Find All Anagrams in a String → 🕑 O(N)
+- **54.** Spiral Matrix → 🕑 O(N*M)
+- **2109.** Adding Spaces to a String → 🕑 O(N)
+- **2981.** Find Longest Special Substring That Occurs Thrice I → 🕑 O(N²)
+- **2779.** Maximum Beauty of an Array After Applying Operation → 🕑 O(N log N)
+- **1726.** Tuple with Same Product → 🕑 O(N²)
+- **3160.** Find the Number of Distinct Colors Among the Balls → 🕑 O(N)
+- **2349.** Design a Number Container System → 🕑 O(1)
+- **2364.** Count Number of Bad Pairs → 🕑 O(N)
+
+---
+
+### 🏆 Competitive Coding Challenges
+- ✅ **TCS CodeVita PYQ**: Rotate String and Anagram
+- ✅ **TCS CodeVita PYQ**: SamBrideHunt
+- ✅ **TCS Chakravyuha Matrix Traversal**
+
+---
