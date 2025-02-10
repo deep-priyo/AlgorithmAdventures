@@ -82,6 +82,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **3105.** Longest Strictly Increasing or Strictly Decreasing Subarray → 🕑 O(N)
 - **1800.** Maximum Ascending Subarray Sum → 🕑 O(N)
 - **1790.** Check if One String Swap Can Make Strings Equal → 🕑 O(N)
+- **3174.** Clear Digits->🕑 0(N)
 
 ---
 
