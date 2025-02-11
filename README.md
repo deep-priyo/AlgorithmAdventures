@@ -107,6 +107,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **3160.** Find the Number of Distinct Colors Among the Balls → 🕑 O(N)
 - **2349.** Design a Number Container System → 🕑 O(1)
 - **2364.** Count Number of Bad Pairs → 🕑 O(N)
+- **1910.** Remove All Occurrences of a Substring → 🕑 O(N)
 
 ---
 
