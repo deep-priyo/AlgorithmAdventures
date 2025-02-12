@@ -108,6 +108,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **2349.** Design a Number Container System → 🕑 O(1)
 - **2364.** Count Number of Bad Pairs → 🕑 O(N)
 - **1910.** Remove All Occurrences of a Substring → 🕑 O(N)
+- **2342.** Max Sum of a Pair With Equal Sum of Digits → O(N^2)
 
 ---
 
