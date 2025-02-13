@@ -29,5 +29,21 @@ public class LC3066 {
         System.out.print("END\n");
         return count;
     }
+    public static int minOperations2(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for(int num:nums){
+            if(num<k) pq.add(num);
+        }
+        int count = 0;
 
+        while(!pq.isEmpty()){
+            int x = pq.poll();
+            count++;
+            if(pq.isEmpty()) break;
+            int y = pq.poll();
+            long up = 2L * x + y;
+            if(up<k) pq.add((int)up);
+        }
+        return count;
+    }
 }
