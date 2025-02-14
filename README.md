@@ -111,7 +111,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **2342.** Max Sum of a Pair With Equal Sum of Digits → Brute Force Approach
 - **2342.** Max Sum of a Pair With Equal Sum of Digits → 🕑 O(N)
 - **3066.** Minimum Operations to Exceed Threshold Value II → 🕑 O(N Log(N))
-
+- **1352.** Product of the Last K Numbers → 🕑 O(1)
 
 ---
 
