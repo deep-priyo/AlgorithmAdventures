@@ -113,7 +113,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **3066.** Minimum Operations to Exceed Threshold Value II → 🕑 O(N Log(N))
 - **1352.** Product of the Last K Numbers → 🕑 O(1)
 - **2698.** Find the Punishment Number of an Integer → 🕑 O(N(log(N)))
-
+- **1415.** The k-th Lexicographical String of All Happy Strings of Length n → 🕑O(n*2^n)
 ---
 
 ### 🏆 Competitive Coding Challenges
