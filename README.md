@@ -83,7 +83,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **1800.** Maximum Ascending Subarray Sum → 🕑 O(N)
 - **1790.** Check if One String Swap Can Make Strings Equal → 🕑 O(N)
 - **3174.** Clear Digits->🕑 0(N)
-
+- **2460.** Apply Operations to an Array->🕑 0(N)
 ---
 
 ### 🟡 Medium Problems
