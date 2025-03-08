@@ -85,6 +85,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **3174.** Clear Digits → 🕑 O(N)
 - **2460.** Apply Operations to an Array → 🕑 O(N)
 - **2570.** Merge Two 2D Arrays by Summing Values → 🕑 O(N)
+- **2379.** Minimum Recolors to Get K Consecutive Black Blocks → 🕑 O(N)
 ---
 
 ### 🟡 Medium Problems
