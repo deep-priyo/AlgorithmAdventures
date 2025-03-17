@@ -118,6 +118,7 @@ Let's **learn together** and continue to grow as problem-solvers! 🌟
 - **1415.** The k-th Lexicographical String of All Happy Strings of Length n → 🕑O(n*2^n)
 - **1980.** Find Unique Binary String → 🕑 O(2^n)
 - **3208.** Alternating Groups II → 🕑 O(N)
+- **2206.** Divide Array Into Equal Pairs → 🕑 O(N)
 ---
 
 ### 🏆 Competitive Coding Challenges
